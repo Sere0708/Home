@@ -1,54 +1,43 @@
 ﻿/*
-// Задача № 1  
-Console.WriteLine("Введите два числа: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-int num2 = Convert.ToInt32(Console.ReadLine());
-if (num1 > num2)
-{
-   Console.WriteLine("{0} наибольшее число", num1);
+// Задача 10.
+
+Console.WriteLine("Введите трехзначное число.\nВыхода из программы команда Exit.");
+    while(true)
+    {
+        string input = Console.ReadLine();
+        if(!input.Equals("exit"))
+            Console.WriteLine("{0}->{1}",input, input[1]);
+        else
+            break;
+    }
+*/
+
+/*
+//. Задача. 13
+
+int n = 32679;
+        Console.WriteLine(n>99 ? n.ToString()[2] : '-');
+        Console.ReadKey(true);
+*/
+
+/*
+//. Задача 15.
+
+int day;
+
+day=int.Parse(Console.ReadLine());
+
+if(day<=5){
+
+Console.WriteLine("рабочий");
+
 }
 
-else
+else{
 
-{
-   Console.WriteLine("{0}) наибольшее число", num2);
+Console.WriteLine("выходной");
+
 }
+
 Console.ReadLine();
 */
-//. Задача № 2
-/*
-Console.Write("a = ");
-double a = double.Parse(Console.ReadLine());
-Console.Write("b = ");
-double b = double.Parse(Console.ReadLine());
-Console.Write("c = ");
-double c = double.Parse(Console.ReadLine());
-if (a>b) a=b;
-if (a>c) a=c;
-if (b>c) b=c;
-Console.WriteLine("Max = {0}",a);
-*/
-
-//. Задача № 3.
-/*
-int i;
-Console.Write("Введите число: ");
-i = int.Parse(Console.ReadLine());
-if (i % 2 == 0)
-{
-    Console.Write("Введенное число является четным");
-    Console.Read();
-}
-else
-{
-    Console.Write("Введенное число нечетное");
-    Console.Read();
-}
-*/
-
-
-
- 
-for (int x = 2; x < 101; x++)       
-if (x%2==0)            
-Console.WriteLine(x);
